@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Rock Paper Scissors Game</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="GameStyles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<div id="container">
+		<div id="header">Rock Paper Scissors</div>
+			<div class="row p-4">
+				<div id="scores">
+					<div id="user">User</div>
+					<div id="userScore">0</div>
+					<div id="sign">:</div>
+					<div id="compScore">0</div>
+					<div id="comp">Comp</div>
+				</div>
+			</div>
+
+			<div id="options">
+				<button id="rock" class="choice" value="rock" onclick="main(this.value)">
+					<i class="fa fa-hand-grab-o"></i></button>
+				<button id="paper" class="choice" value="paper" onclick="main(this.value)">
+					<i class="fa fa-hand-paper-o"></i></button>
+				<button id="scissors" class="choice" value="scissors" onclick="main(this.value)">
+					<i class="fa fa-hand-scissors-o"></i></button>
+			</div>
+
+			<div class="row p-5">
+			<div id="result">
+				<div id="userResult">
+					<i class="fa fa-hand-grab-o"></i>
+				</div>
+				<h3 id="user_text">User</h3>
+				<div id="result_text">It's a Draw.</div>
+				<div id="compResult">
+					<i class="fa fa-hand-grab-o"></i>
+				</div>
+				<h3 id="comp_text">Comp</h3>
+			</div>
+			</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
